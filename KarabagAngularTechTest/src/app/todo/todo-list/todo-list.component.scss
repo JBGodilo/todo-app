@@ -1,0 +1,95 @@
+.todo-list-container {
+  padding: 20px;
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+
+    >h1 {
+      margin: 0;
+    }
+
+    >.add-btn-container {
+      border-radius: 4px;
+      box-shadow: none;
+      text-align: center;
+
+      > button {
+        height: 30px;
+        width: 200px;
+      }
+    }
+  }
+
+  .search-container {
+    margin-top: 20px;
+
+    .input-field {
+      width: 85%;
+      border: 1px solid #babfc3;
+      border-radius: 4px;
+      padding: 5px;
+      height: 30px;
+    }
+  }
+
+  .todo-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+
+    > * {
+      flex: 0 0 25%;
+    }
+
+    > .todo-box {
+      background: #f7fbfe;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      height: 300px;
+
+      > h2 {
+        margin: 10px 0 0;
+      }
+
+      > p {
+        margin: 10px 0 0;
+        height: 230px;
+      }
+
+      .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > .edit-date {
+          margin: 0;
+        }
+  
+        >.actions {
+          display: flex;
+
+          .btn {
+            background: #143B5D;
+            color: #fff;
+            border-radius: 7px;
+            border: 1px solid #8f99a1;
+            padding: 3px;
+            align-items: center;
+            cursor: pointer;
+            width: 100px;
+            justify-content: center;
+            display: flex;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    > .done {
+      background-color: rgb(113, 219, 113);
+    }
+  }
+}

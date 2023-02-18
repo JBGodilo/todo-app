@@ -1,0 +1,17 @@
+.root-container {
+  display: flex;
+  height: 100%;
+
+  .left-nav-wrapper {
+    background: #f7fbfe;
+    width: 20%;
+    padding: 30px;
+    overflow: auto;
+  }
+
+  .content-wrapper {
+    width: 85%;
+    overflow-y: auto;
+    padding-bottom: 50px;
+  }
+}

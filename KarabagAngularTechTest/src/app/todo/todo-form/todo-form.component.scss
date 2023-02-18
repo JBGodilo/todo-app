@@ -1,0 +1,51 @@
+.todo-form-container {
+  height: 100%;
+  padding: 0px 65px;
+
+  .todo-item-container {
+    width: 65%;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    .btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .btn {
+        background: #143B5D;
+        color: #fff;
+        border-radius: 7px;
+        border: 1px solid #8f99a1;
+        padding: 3px;
+        align-items: center;
+        cursor: pointer;
+        width: 100px;
+        justify-content: center;
+        display: flex;
+        height: 30px;
+      }
+    }
+
+    .control-container {
+      margin-top: 20px;
+
+      .input-field, .textarea-field {
+        width: 100%;
+        border: 1px solid #babfc3;
+        border-radius: 4px;
+        padding: 5px;
+      }
+
+      .input-field {
+        height: 30px;
+      }
+
+      .textarea-field {
+        height: 100px;
+      }
+    }
+  }
+}

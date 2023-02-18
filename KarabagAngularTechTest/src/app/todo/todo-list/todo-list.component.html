@@ -1,0 +1,28 @@
+<div class="todo-list-container">
+  <div class="title-container">
+    <h1>TASKS</h1>
+
+    <div class="add-btn-container">
+      <button (click)="addNewTodo()">Add Todo</button>
+    </div>
+  </div>
+
+  <div class="search-container">
+    <input class="input-field" type="text" placeholder="Search To Do" [(ngModel)]="searchTerm" (input)="search(searchTerm)">
+  </div>
+
+  <div class="todo-box-container">
+    <div class="todo-box" [ngClass]="{'done': todo?.status === 'done' }" *ngFor="let todo of todoList | searchFilter: searchTerm; index as i">
+      <div class="btn-container">
+        <p class="edit-date">{{todo.endDate}}</p>
+        <div class="actions">
+          <button class="btn" (click)="editTodo(todo)">Edit</button>
+          <button class="btn" (click)="deleteTodo(todo)">Delete</button>
+        </div>
+      </div>
+
+      <h2>{{ todo?.label }}</h2>
+      <p>{{ todo?.description }}</p>
+    </div>
+  </div>
+</div>
